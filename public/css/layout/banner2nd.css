@@ -1,0 +1,193 @@
+div.banner-2nd {
+    margin-top: 120px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+    width: 100%;
+    grid-template-areas: "b1 b1 b2 b2 b2" "b1 b1 b2 b2 b2" "b1 b1 b3 b3 b3" "b1 b1 b3 b3 b3";
+}
+
+div.banner-2nd .banner__element {
+    margin: 10px;
+}
+
+div.banner-2nd .banner__element:first-child {
+    grid-area: b1;
+    position: relative;
+    overflow: hidden;
+}
+
+div.banner-2nd .banner__element:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+}
+
+div.banner-2nd .banner__element:first-child img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+div.banner-2nd .banner__element:first-child div.title {
+    position: absolute;
+    top: 5%;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border: 10px double white;
+    padding: 10px 30px;
+}
+
+div.banner-2nd .banner__element:first-child div.title h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+div.banner-2nd .banner__element:first-child div.title p {
+    font-size: 20px;
+}
+
+div.banner-2nd .banner__element:nth-child(2) {
+    grid-area: b2;
+    position: relative;
+}
+
+div.banner-2nd .banner__element:nth-child(2) video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.banner-2nd .banner__element:nth-child(2) div.title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    border-left: 3px solid whitesmoke;
+    padding: 10px;
+}
+
+div.banner-2nd .banner__element:nth-child(2) div.title h1 {
+    color: whitesmoke;
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+div.banner-2nd .banner__element:nth-child(3) {
+    grid-area: b3;
+    position: relative;
+    background-image: url("https://photo.techrum.vn/images/2020/07/24/AIOT-38813f3d7d6a70b456.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.banner-2nd .banner__element:nth-child(3) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.banner-2nd .banner__element:nth-child(3) div.title {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    border: 3px double white;
+    padding: 10px 10px;
+}
+
+div.banner-2nd .banner__element:nth-child(3) div.title h1 {
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+@media(max-width:740px) {
+    div.banner-2nd {
+        margin-top: 0px;
+        margin-bottom: 40px;
+        display: block;
+    }
+    div.banner-2nd .banner__element {
+        margin: 10px;
+    }
+    div.banner-2nd .banner__element:first-child {
+        position: relative;
+        overflow: hidden;
+        height: 180px;
+    }
+    div.banner-2nd .banner__element:first-child img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+    }
+    div.banner-2nd .banner__element:first-child img:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+    div.banner-2nd .banner__element:first-child div.title {
+        top: 10px;
+        left: 10px;
+        padding: 10px 10px;
+    }
+    div.banner-2nd .banner__element:first-child div.title h1 {
+        font-size: 21px;
+    }
+    div.banner-2nd .banner__element:first-child div.title p {
+        font-size: 19px;
+    }
+    div.banner-2nd .banner__element:nth-child(2) {
+        position: relative;
+    }
+    div.banner-2nd .banner__element:nth-child(2) video {
+        height: 105px;
+    }
+    div.banner-2nd .banner__element:nth-child(2) div.title {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        border-left: 3px solid whitesmoke;
+        padding: 10px;
+    }
+    div.banner-2nd .banner__element:nth-child(2) div.title h1 {
+        color: whitesmoke;
+        letter-spacing: 4px;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    div.banner-2nd .banner__element:nth-child(3) {
+        position: relative;
+        width: none;
+        background-image: url("https://photo.techrum.vn/images/2020/07/24/AIOT-38813f3d7d6a70b456.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        height: 180px;
+    }
+    div.banner-2nd .banner__element:nth-child(3) div.title {
+        width: 85%;
+        text-align: center;
+        top: 30%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: black;
+        color: white;
+        border: 3px double white;
+        padding: 10px 10px;
+    }
+    div.banner-2nd .banner__element:nth-child(3) div.title h1 {
+        font-size: 17px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+    }
+}

@@ -1,0 +1,130 @@
+body {
+    background: #3f5efb;
+    background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+}
+
+div.container {
+    width: 100%;
+    height: auto;
+    background: #3f5efb;
+    background: radial-gradient(circle, #3f5efb 0%, #fc466b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container div.form {
+    width: 30%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 100px 0px;
+    box-shadow: 0px 3px 15px #151313;
+}
+
+div.container div.form h1 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    padding: 11px;
+}
+
+div.container div.form p {
+    color: gray;
+    letter-spacing: 1px;
+    padding: 5px 0px 15px 0px;
+}
+
+div.container div.form form input {
+    border: 3px solid #2980b9;
+    width: 80%;
+    line-height: 52px;
+    border-radius: 35px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 5px 0px;
+}
+
+a {
+    color: #9191d8;
+}
+
+div.container div.form form a {
+    color: grey;
+    text-decoration: revert;
+}
+
+div.container div.form form button {
+    border: 2px solid #9b59b6;
+    margin: 15px;
+    line-height: 35px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.1s ease-in-out;
+}
+
+div.container div.form form button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+    background-color: #2d3436;
+}
+
+@media screen and (max-width: 740px) {
+    body {
+        padding: 5px;
+    }
+    div.container div.form {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin: 30% auto;
+        box-shadow: 0px 3px 15px #151313;
+    }
+    div.container div.form h1 {
+        font-size: 45px;
+        letter-spacing: 3px;
+        padding: 11px;
+    }
+    div.container div.form p {
+        color: gray;
+        letter-spacing: 1px;
+        padding: 5px 0px 15px 0px;
+    }
+    div.container div.form form input {
+        border: 3px solid #2980b9;
+        width: 80%;
+        line-height: 52px;
+        border-radius: 35px;
+        background-color: black;
+        text-align: center;
+        color: white;
+        margin: 5px 0px;
+    }
+    a {
+        color: #9191d8;
+    }
+    div.container div.form form a {
+        color: grey;
+        text-decoration: revert;
+    }
+    div.container div.form form button {
+        border: 2px solid #9b59b6;
+        margin: 15px;
+        line-height: 35px;
+        width: 30%;
+        background-color: black;
+        color: white;
+        border-radius: 25px;
+        transition: all 0.1s ease-in-out;
+    }
+    div.container div.form form button:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+        background-color: #2d3436;
+    }
+}

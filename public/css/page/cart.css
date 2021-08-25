@@ -1,0 +1,180 @@
+div.container-fluid {
+    padding: 0;
+}
+
+div.content-header {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+div.content-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.content-header h1 {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    font-size: 29px;
+    letter-spacing: 5px;
+    color: #656565;
+}
+
+div.content--mid {
+    width: 100%;
+}
+
+div.content--mid table,
+div.content--mid th,
+div.content--mid td {
+    border: 1px solid black;
+}
+
+div.content--mid table {
+    width: 98%;
+    margin: 15px 10px 10px 10px;
+    text-align: center;
+}
+
+div.content--mid table thead tr {
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    /* display: flex; */
+    /* padding: 30px; */
+    background-color: whitesmoke;
+    font-size: 14px;
+}
+
+div.content--mid table tbody tr td {
+    vertical-align: middle;
+}
+
+div.content--mid table tbody tr td input.submit {
+    background-color: #b8e994;
+    border: none;
+    padding: 0px 43px;
+    margin: 3px;
+    font-size: 14px;
+    border-radius: 17px;
+    box-shadow: 0px 2px grey;
+    transition: all 0.3s;
+}
+
+div.content--mid table tbody tr td img {
+    width: 180px;
+    height: 90px;
+    object-fit: cover;
+    margin: 2px;
+}
+
+div.content--mid table tbody tr td input.submit:hover {
+    background-color: #6a89cc;
+    box-shadow: none;
+}
+
+div.content--mid table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+div.content-khach {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+div.content-khach h5 {
+    font-size: 20px;
+    line-height: 1px;
+}
+
+div.content-khach p {
+    font-size: 14px;
+    padding: 5px 0px 5px 20px;
+}
+
+div.content-khach p a {
+    margin: 0px 50px;
+}
+
+div.content-khach a {
+    text-decoration: none;
+    width: max-content;
+    padding: 8px 55px;
+    margin: 5px;
+    line-height: 50px;
+    border-radius: 25px;
+    color: black;
+    background-color: #ffdd59;
+    box-shadow: 0px 2px 3px #cbcbcb;
+    transition: all 0.3s;
+}
+
+div.content-khach .dathang {
+    background-color: #81ecec;
+    text-decoration: none;
+    width: max-content;
+    padding: 6px 55px;
+    margin: 5px;
+    /* line-height: 50px; */
+    border-radius: 25px;
+    color: black;
+    /* background-color: #ffdd59; */
+    box-shadow: 0px 2px 3px #cbcbcb;
+    transition: all 0.3s;
+    border: initial;
+    font-size: 14px;
+}
+
+div.content-khach a:hover {
+    background-color: #dfe4ea;
+    box-shadow: none;
+}
+
+@media screen and (max-width:740px) {
+    .container {
+        padding: 0;
+    }
+    div.content--mid {
+        width: 100%;
+    }
+    div.content--mid table,
+    div.content--mid th,
+    div.content--mid td {
+        border: 1px solid black;
+        font-size: 12px;
+    }
+    div.content--mid table {
+        width: 98%;
+        margin: 15px auto;
+        text-align: center;
+    }
+    div.content--mid table thead tr {
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        /* display: flex; */
+        /* padding: 30px; */
+        background-color: whitesmoke;
+        font-size: 14px;
+    }
+    div.content--mid table tbody tr td img {
+        width: 180px;
+        height: 90px;
+        object-fit: cover;
+        margin: 2px;
+    }
+    div.content--mid table tbody tr td input.submit:hover {
+        background-color: #6a89cc;
+        box-shadow: none;
+    }
+    div.content--mid table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+}

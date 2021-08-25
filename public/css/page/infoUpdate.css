@@ -1,0 +1,60 @@
+div.content-mid {
+    width: 80%;
+    margin: 0px auto;
+}
+
+div.container-fluid {
+    padding: 0;
+}
+
+div.container-link {
+    width: 100%;
+    padding: 6px 190px;
+    border-top: 0.1px solid #333;
+}
+
+div.container-link div.container-hello {
+    background: #e1e1e1;
+    background: radial-gradient(circle, #e1e1e1 0%, #f4f4f4 100%);
+    text-align: center;
+    line-height: 20px;
+    margin: 10px;
+}
+
+div.detail-info form {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+div.detail-info form h1 {
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.detail-info form input {
+    width: 90%;
+    line-height: 35px;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #2980b9;
+    border-radius: 30px;
+    background: black;
+    color: wheat;
+}
+
+div.detail-info form button {
+    line-height: 25px;
+    padding: 0px 64px;
+    background-color: #000000;
+    border: 2px solid;
+    border-radius: 13px;
+    color: aliceblue;
+}
+
+@media (max-width:740px) {
+    div.container-link {
+        padding: 0;
+    }
+}

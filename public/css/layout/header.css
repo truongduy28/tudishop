@@ -1,0 +1,212 @@
+div.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    background-color: #f5f5f5;
+    color: #334141;
+    border-bottom: 1px solid #334141;
+    height: 21.5px;
+}
+
+div.welcome nav ul {
+    display: flex;
+    align-items: center;
+}
+
+div.welcome nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 4px 0px 4px 20px;
+    transition: all 0.3s;
+}
+
+div.welcome nav ul li a {
+    color: #334141;
+    text-decoration: none;
+}
+
+div.welcome nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #f5f5f5;
+    top: 21px;
+    left: -30px;
+    width: max-content;
+    padding: 5px;
+    text-align: inherit;
+    border: 1px solid;
+    border-top: none;
+}
+
+div.welcome nav ul li ul li {
+    position: relative;
+    list-style: none;
+    padding: 4px 5px 5px 5px;
+}
+
+div.welcome nav ul li ul li:hover a {
+    color: black;
+}
+
+div.welcome nav ul li:hover ul {
+    display: block;
+    transition: all 0.3s;
+}
+
+div.header-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    height: 100px;
+}
+
+div.header-mid h1,
+div.header-mid div.cart {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.header-mid h1 {
+    font-size: 40px;
+}
+
+div.header-mid nav {
+    flex: 3;
+}
+
+div.header-mid nav ul {
+    display: flex;
+    align-items: center;
+}
+
+div.header-mid nav ul li {
+    padding: 0px 50px 0px 0px;
+}
+
+div.header-mid nav ul li a {
+    color: black;
+}
+
+div.header-mid div.cart {
+    font-size: 20px;
+}
+
+div.header-mid div.cart>a {
+    background-color: #76f8ff;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+div.header-mid div.cart p {
+    padding: 0px 10px;
+}
+
+div.header-mid div.cart label,
+div.header-mid div.cart .overlay,
+div.header-mid div.cart .nav_mobile {
+    display: none;
+}
+
+@media (max-width: 740px) {
+    .mobile__hidden {
+        display: none;
+    }
+    div.welcome {
+        padding: 0px 2px;
+    }
+    div.welcome nav ul {
+        display: flex;
+        align-items: center;
+    }
+    div.welcome nav ul li {
+        position: relative;
+        list-style: none;
+        padding: 4px 0px 4px 20px;
+        transition: all 0.3s;
+    }
+    div.welcome nav ul li ul {
+        top: 21px;
+        left: -155%;
+        z-index: 999;
+    }
+    div.header-mid {
+        padding: 0px 10px;
+        height: 59px;
+        justify-content: space-between;
+    }
+    div.header-mid h1 {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+    div.header-mid div.cart {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        font-size: 20px;
+    }
+    div.header-mid div.cart label,
+    div.header-mid div.cart .overlay,
+    div.header-mid div.cart .nav_mobile {
+        display: block;
+    }
+    div.header-mid div.cart .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: none;
+        z-index: 99998;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    div.header-mid div.cart input:checked~.nav_mobile {
+        transform: translateX(0%);
+    }
+    div.header-mid div.cart input:checked~.overlay {
+        opacity: 1;
+        display: block;
+    }
+    div.header-mid div.cart .nav_mobile {
+        padding: 15px;
+        font-size: 15px;
+        font-style: normal;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        width: 60%;
+        background-color: #f5f5f5;
+        z-index: 99999;
+        transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+    div.header-mid div.cart .nav_mobile p {
+        padding: 13px 0px 18px;
+        border-bottom: 1px solid;
+        font-size: 18px;
+    }
+    div.header-mid div.cart .nav_mobile ul {
+        display: block;
+    }
+    div.header-mid div.cart .nav_mobile ul li {
+        padding: 12px;
+    }
+    div.header-mid div.cart .nav_mobile ul li a {
+        color: black;
+    }
+    div.header-mid div.cart .nav_mobile ul:nth-child(3) {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
